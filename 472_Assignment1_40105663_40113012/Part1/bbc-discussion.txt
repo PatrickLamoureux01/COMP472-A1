@@ -1,0 +1,7 @@
+(a)
+Given that each class is not quite exactly balanced in terms of documents and words, and also for the reason that the f1 score measures the harmonic mean of precision and recall,
+it is best to evaluate by f1-score, as evaluating by other metrics such as accuracy, precision or recall only can lead to skewed results.
+(b)
+The performance on step 8 is the same as step 7, because we did not change anything, we just re-ran the program with the same settings, so it should not change.
+The performance on step 9 is slightly worse, because we are lowering the smoothing value to a much lower value than it is by default (1).
+The performance on step 10 is very similar to step 7, because we are bringing the smoothing value closer to the original default value of 1.

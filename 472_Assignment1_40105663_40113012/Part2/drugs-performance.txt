@@ -1,0 +1,175 @@
+a)
+GaussianNB - DecisionTreeClassifier - GridSearchCV(DecisionTreeClassifier("criterion","max_depth","min_samples_split" modified))
+- Perceptron - MLPClassifier("hidden_layer_sizes","activation","solver") - GridSearchCV(MLPClassifier("hidden_layer_sizes","activation","solver" modified))
+
+Top-DT Best Hyperparameters: (Multiple Ties, One given) 'gini','10','5'
+Top-MLP Best Hyperparameters: '(30,50)','adam','tanh'
+
+Reference (Hyperparameters avalaible):
+
+GridSearchCV(DecisionTreeClassifier(),{
+        'criterion':['gini','entropy'],
+        'max_depth':[10,20],
+        'min_samples_split':[5,20,40]
+    }, cv=5)
+	
+GridSearchCV(MLPClassifier(), {
+        'hidden_layer_sizes': [(30, 50), (10, 10, 10)],
+        'activation': ['logistic', 'tanh', 'relu', 'identity'],
+        'solver': ['adam','sgd']
+    }, cv=5)
+	
+b)
+Order: DrugA -> DrugB -> DrugC -> DrugX -> DrugY 
+
+ [ 6  0  0  0  0]
+ [ 0  4  0  0  0]
+ [ 0  0  3  0  0]
+ [ 0  0  0 12  1]
+ [ 4  2  1  0 17]
+ 
+ [ 6  0  0  0  0]
+ [ 0  4  0  0  0]
+ [ 0  0  3  0  0]
+ [ 0  0  0 12  1]
+ [ 0  0  0  0 24]
+
+ [ 6  0  0  0  0]
+ [ 0  4  0  0  0]
+ [ 0  0  3  0  0]
+ [ 0  0  0 12  1]
+ [ 0  0  0  0 24]
+ 
+ [ 5  0  0  0  1]
+ [ 4  0  0  0  0]
+ [ 0  0  0  0  3]
+ [ 8  0  0  0  5]
+ [ 1  0  0  0 23]
+ 
+ [ 0  0  0  3  3]
+ [ 0  0  0  4  0]
+ [ 0  0  0  0  3]
+ [ 0  0  0  8  5]
+ [ 0  0  0  0 24]
+ 
+ [ 4  2  0  0  0]
+ [ 0  3  0  1  0]
+ [ 0  0  0  3  0]
+ [ 0  0  0 11  2]
+ [ 0  0  0  0 24]
+ 
+c) and d) using sklearn.metrics import classification_report
+
+** DrugA:0 | DrugB:1 | DrugC:2 | DrugX:3 | DrugY:4 **
+
+
+              precision    recall  f1-score   support
+
+           0       0.60      1.00      0.75         6
+           1       0.67      1.00      0.80         4
+           2       0.75      1.00      0.86         3
+           3       1.00      0.92      0.96        13
+           4       0.94      0.71      0.81        24
+
+    accuracy                           0.84        50
+   macro avg       0.79      0.93      0.84        50
+weighted avg       0.88      0.84      0.84        50
+
+
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         6
+           1       1.00      1.00      1.00         4
+           2       1.00      1.00      1.00         3
+           3       1.00      0.92      0.96        13
+           4       0.96      1.00      0.98        24
+
+    accuracy                           0.98        50
+   macro avg       0.99      0.98      0.99        50
+weighted avg       0.98      0.98      0.98        50
+
+
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         6
+           1       1.00      1.00      1.00         4
+           2       1.00      1.00      1.00         3
+           3       1.00      0.92      0.96        13
+           4       0.96      1.00      0.98        24
+
+    accuracy                           0.98        50
+   macro avg       0.99      0.98      0.99        50
+weighted avg       0.98      0.98      0.98        50
+
+ 
+               precision    recall  f1-score   support
+
+           0       0.28      0.83      0.42         6
+           1       0.00      0.00      0.00         4
+           2       0.00      0.00      0.00         3
+           3       0.00      0.00      0.00        13
+           4       0.72      0.96      0.82        24
+
+    accuracy                           0.56        50
+   macro avg       0.20      0.36      0.25        50
+weighted avg       0.38      0.56      0.44        50
+
+
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         6
+           1       0.00      0.00      0.00         4
+           2       0.00      0.00      0.00         3
+           3       0.53      0.62      0.57        13
+           4       0.69      1.00      0.81        24
+
+    accuracy                           0.64        50
+   macro avg       0.24      0.32      0.28        50
+weighted avg       0.47      0.64      0.54        50
+
+
+              precision    recall  f1-score   support
+
+           0       1.00      0.67      0.80         6
+           1       0.60      0.75      0.67         4
+           2       0.00      0.00      0.00         3
+           3       0.73      0.85      0.79        13
+           4       0.92      1.00      0.96        24
+
+    accuracy                           0.84        50
+   macro avg       0.65      0.65      0.64        50
+weighted avg       0.80      0.84      0.81        50
+
+
+
+8.
+                                                             Avg      Std
+M1
+Accuracy:0.86 0.92 0.82 0.86 0.78 0.88 0.88 0.96 0.88 0.86 = 0.87 , 0.049216077
+Macro avg:0.76 0.92 0.79 0.84 0.78 0.9 0.85 0.96 0.82 0.84 = 0.846 , 0.064152596
+Weighted:0.88 0.92 0.83 0.86 0.78 0.88 0.89 0.96 0.91 0.86 = 0.877 , 0.049676733
+
+M2
+Accuracy:1 1 0.96 1 1 1 1 1 1 0.98 = 0.994 , 0.013498971
+Macro avg:1 1 0.94 1 1 1 1 1 1 0.99 = 0.993 , 0.018885621
+Weighted:1 1 0.96 1 1 1 1 1 1 0.98 = 0.994 , 0.013498971
+
+M3 
+Accuracy:1 1 0.96 1 1 1 1 1 1 0.98 = 0.994 , 0.013498971
+Macro avg:1 1 0.94 1 1 1 1 1 1 0.99 = 0.993 , 0.018885621
+Weighted:1 1 0.96 1 1 1 1 1 1 0.98 = 0.993 , 0.013498971
+
+M4
+Accuracy:0.46 0.5 0.54 0.5 0.58 0.48 0.56 0.48 0.54 0.64 = 0.528 , 0.055136195
+Macro avg:0.21 0.29 0.21 0.23 0.37 0.23 0.4 0.2 0.23 0.29 = 0.266 , 0.070269323
+Weighted:0.41 0.38 0.41 0.43 0.56 0.4 0.58 0.36 0.5 0.56 = 0.459 , 0.08292567
+
+M5
+Accuracy:0.5 0.5 0.64 0.54 0.54 0.5 0.64 0.5 0.64 0.64 = 0.564 , 0.067197884
+Macro avg:0.2 0.22 0.27 0.24 0.25 0.22 0.27 0.23 0.27 0.29 = 0.246 , 0.028751812
+Weighted:0.42 0.4 0.54 0.46 0.45 0.38 0.55 0.38 0.57 0.55 = 0.47 , 0.075865378
+
+M6
+Accuracy:0.8 0.8 0.86 0.72 0.8 0.74 0.92 0.66 0.9 0.78 = 0.798 , 0.080249611
+Macro avg:0.69 0.67 0.7 0.63 0.71 0.58 0.92 0.43 0.91 0.62 = 0.686 , 0.14538837
+Weighted:0.8 0.76 0.83 0.69 0.8 0.69 0.92 0.61 0.91 0.75 = 0.776 , 0.097775252

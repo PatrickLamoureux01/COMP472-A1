@@ -1,0 +1,211 @@
+(A)
+********************* MultinomialNB default values, try 1 *********************
+(B)
+[[ 97,   0,   4,   0,   1],
+ [  0,  72,   1,   0,   2],
+ [  0,   0,  79,   0,   0],
+ [  0,   0,   0, 110,   0],
+ [  0,   1,   1,   0,  77]]
+(C)
+               precision    recall  f1-score   support
+
+     business       1.00      0.95      0.97       102
+entertainment       0.99      0.96      0.97        75
+     politics       0.93      1.00      0.96        79
+        sport       1.00      1.00      1.00       110
+         tech       0.96      0.97      0.97        79
+
+     accuracy                           0.98       445
+    macro avg       0.98      0.98      0.98       445
+ weighted avg       0.98      0.98      0.98       445
+
+(D)
+Accuracy: 0.9775280898876404
+Macro-Average F1: 0.9759630876196216
+Weighted-Average F1: 0.9776081758890393
+(E)
+business: 0.2292134831460674
+entertainment: 0.17348314606741572
+politics: 0.18741573033707865
+sport: 0.22966292134831462
+tech: 0.1802247191011236
+(F)
+Size of vocabulary: 29421
+(G)
+Number of word tokens in the business class: 133057.0
+Number of word tokens in the entertainment class: 101092.0
+Number of word tokens in the politics class: 151821.0
+Number of word tokens in the sport class: 128418.0
+Number of word tokens in the tech class: 158834.0
+(H)
+Number of word tokens in the entire corpus: 854490
+(I)
+business: 10761
+entertainment: 10609
+politics: 10415
+sport: 9514
+tech: 11266
+(J)
+Number and percentage of words with a frequency of one in the entire corpus: 319824 - 37.42864164589404%
+(K)
+Word 1 log prob: -7.106399283179788
+Word 2 log prob: -7.316166659847001
+
+(A)
+********************* MultinomialNB default values, try 2 *********************
+(B)
+[[ 97,   0,   4,   0,   1],
+ [  0,  72,   1,   0,   2],
+ [  0,   0,  79,   0,   0],
+ [  0,   0,   0, 110,   0],
+ [  0,   1,   1,   0,  77]]
+(C)
+               precision    recall  f1-score   support
+
+     business       1.00      0.95      0.97       102
+entertainment       0.99      0.96      0.97        75
+     politics       0.93      1.00      0.96        79
+        sport       1.00      1.00      1.00       110
+         tech       0.96      0.97      0.97        79
+
+     accuracy                           0.98       445
+    macro avg       0.98      0.98      0.98       445
+ weighted avg       0.98      0.98      0.98       445
+
+(D)
+Accuracy: 0.9775280898876404
+Macro-Average F1: 0.9759630876196216
+Weighted-Average F1: 0.9776081758890393
+(E)
+business: 0.2292134831460674
+entertainment: 0.17348314606741572
+politics: 0.18741573033707865
+sport: 0.22966292134831462
+tech: 0.1802247191011236
+(F)
+Size of vocabulary: 29421
+(G)
+Number of word tokens in the business class: 133057.0
+Number of word tokens in the entertainment class: 101092.0
+Number of word tokens in the politics class: 151821.0
+Number of word tokens in the sport class: 128418.0
+Number of word tokens in the tech class: 158834.0
+(H)
+Number of word tokens in the entire corpus: 854490
+(I)
+business: 10761
+entertainment: 10609
+politics: 10415
+sport: 9514
+tech: 11266
+(J)
+Number and percentage of words with a frequency of one in the entire corpus: 319824 - 37.42864164589404%
+(K)
+Word 1 log prob: -7.106399283179788
+Word 2 log prob: -7.316166659847001
+
+(A)
+********************* MultinomialNB default values, try 3 *********************
+(B)
+[[ 97,   0,   4,   0,   1],
+ [  0,  72,   1,   0,   2],
+ [  0,   0,  79,   0,   0],
+ [  0,   0,   0, 110,   0],
+ [  0,   1,   1,   0,  77]]
+(C)
+               precision    recall  f1-score   support
+
+     business       1.00      0.95      0.97       102
+entertainment       0.99      0.96      0.97        75
+     politics       0.93      1.00      0.96        79
+        sport       1.00      1.00      1.00       110
+         tech       0.96      0.97      0.97        79
+
+     accuracy                           0.98       445
+    macro avg       0.98      0.98      0.98       445
+ weighted avg       0.98      0.98      0.98       445
+
+(D)
+Accuracy: 0.9775280898876404
+Macro-Average F1: 0.9759630876196216
+Weighted-Average F1: 0.9776081758890393
+(E)
+business: 0.2292134831460674
+entertainment: 0.17348314606741572
+politics: 0.18741573033707865
+sport: 0.22966292134831462
+tech: 0.1802247191011236
+(F)
+Size of vocabulary: 29421
+(G)
+Number of word tokens in the business class: 133057.0
+Number of word tokens in the entertainment class: 101092.0
+Number of word tokens in the politics class: 151821.0
+Number of word tokens in the sport class: 128418.0
+Number of word tokens in the tech class: 158834.0
+(H)
+Number of word tokens in the entire corpus: 854490
+(I)
+business: 10761
+entertainment: 10609
+politics: 10415
+sport: 9514
+tech: 11266
+(J)
+Number and percentage of words with a frequency of one in the entire corpus: 319824 - 37.42864164589404%
+(K)
+Word 1 log prob: -6.860375337564767
+Word 2 log prob: -7.125725229112834
+
+(A)
+********************* MultinomialNB default values, try 4 *********************
+(B)
+[[ 97,   0,   4,   0,   1],
+ [  0,  72,   1,   0,   2],
+ [  0,   0,  79,   0,   0],
+ [  0,   1,   0, 109,   0],
+ [  0,   1,   1,   0,  77]]
+(C)
+               precision    recall  f1-score   support
+
+     business       1.00      0.95      0.97       102
+entertainment       0.97      0.96      0.97        75
+     politics       0.93      1.00      0.96        79
+        sport       1.00      0.99      1.00       110
+         tech       0.96      0.97      0.97        79
+
+     accuracy                           0.98       445
+    macro avg       0.97      0.98      0.97       445
+ weighted avg       0.98      0.98      0.98       445
+
+(D)
+Accuracy: 0.9752808988764045
+Macro-Average F1: 0.9737438416199214
+Weighted-Average F1: 0.9753788846497454
+(E)
+business: 0.2292134831460674
+entertainment: 0.17348314606741572
+politics: 0.18741573033707865
+sport: 0.22966292134831462
+tech: 0.1802247191011236
+(F)
+Size of vocabulary: 29421
+(G)
+Number of word tokens in the business class: 133057.0
+Number of word tokens in the entertainment class: 101092.0
+Number of word tokens in the politics class: 151821.0
+Number of word tokens in the sport class: 128418.0
+Number of word tokens in the tech class: 158834.0
+(H)
+Number of word tokens in the entire corpus: 854490
+(I)
+business: 10761
+entertainment: 10609
+politics: 10415
+sport: 9514
+tech: 11266
+(J)
+Number and percentage of words with a frequency of one in the entire corpus: 319824 - 37.42864164589404%
+(K)
+Word 1 log prob: -7.084533749426673
+Word 2 log prob: -7.298819381986518

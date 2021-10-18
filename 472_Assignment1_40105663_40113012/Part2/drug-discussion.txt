@@ -1,0 +1,7 @@
+No the same model does not always give us the same performance everytime we run it. There are a few reasons to why this can be. The first major
+reason as to why we're seeing this happen in this program is due to the training set split. Before we run any of the models, we split our drug200.csv
+data into two sets, one for training and one for testing. We use the default settings so the split is 75% train 25% test. Now everytime we rerun this
+program this training set is rebuilt, it is not constant. So our models are given different datasets to train on and tested on each time. This can be
+shown well by looking at our avg and std for Model 2 and 3, the trees. The trees are fairly good and usually get perfect scores. Though sometimes they 
+get a training and testing set that is more tricky and they won't recieve a perfect score. This can be due to either the training or testing set being
+biased on a specific value since it's random. 
